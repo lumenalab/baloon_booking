@@ -1,19 +1,13 @@
 <!-- Awards & Certifications Section -->
-<section class="awards-section py-5">
+<section class="awards-section">
     <div class="container">
-        <!-- Optional: Add a title for the section if you like -->
-        <!-- 
-        <div class="row justify-content-center text-center mb-4">
-            <div class="col-lg-8">
-                <h2 class="section-title">AWARDS & CERTIFICATIONS</h2>
-            </div>
-        </div> 
-        -->
         <div class="row justify-content-center">
             <div class="col-lg-12">
-                <!-- This wrapper enables horizontal scrolling on small screens -->
+                <!-- 
+                    The wrapper now has padding to create a "safe zone" for hover effects,
+                    and a negative margin to keep it visually edge-to-edge.
+                -->
                 <div class="awards-wrapper">
-                    <!-- This track holds the logos and scrolls within the wrapper -->
                     <div class="awards-track">
                         <div class="award-item">
                             <img src="{{ asset('img/logos/logo_1.png') }}" alt="Travelers' Choice 2023" class="award-logo">
@@ -48,46 +42,50 @@
    SECTION: AWARDS & CERTIFICATIONS
    =================================== */
 .awards-section {
-    background-color: #f8f9fa; /* A light grey background to separate from white sections */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    /* background-color: #f8f9fa;  */
+    padding: 3rem 0;
 }
 
 /* --- Wrapper & Track --- */
 .awards-wrapper {
-    overflow-x: auto; /* CRITICAL: Enables horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    padding-bottom: 1rem; /* Adds space for the scrollbar so it doesn't overlap content */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    /* 
+     * THIS IS THE FIX:
+     * 1. Padding creates a "safe zone" inside the scrollable area. The hover
+     *    effects (shadow, transform) will now happen safely within this padding.
+     * 2. Negative margin is used to counteract the padding, so the scrollable
+     *    area still appears to be edge-to-edge within its parent column.
+    */
+    padding: 20px;
+    margin: -20px;
 }
 
-/* Hide scrollbar for a cleaner look, but keep it functional */
 .awards-wrapper::-webkit-scrollbar {
     display: none;
 }
 
 .awards-track {
-    display: flex; /* Lays out logos in a row */
-    flex-wrap: nowrap; /* Ensures logos stay in a single line */
-    justify-content: center; /* Centers the logos on larger screens */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    gap: 30px; /* Space between logos */
-    padding: 0 10px; /* A little space on the sides */
+    gap: 30px;
 }
 
 /* ===================================
    COMPONENT: AWARD ITEM
    =================================== */
 .award-item {
-    /* Sizing & Layout */
     width: 160px;
     height: 100px;
-    flex-shrink: 0; /* Prevents logos from shrinking */
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-
-    /* Styling */
+    /* Margin is no longer needed here */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -97,15 +95,15 @@
 
 .award-item:hover {
     transform: translateY(-5px);
-    border-color: #f79321; /* Use your brand's primary color */
+    border-color: #f79321;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .award-logo {
     max-width: 100%;
     max-height: 100%;
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Scale without stretching */
+    width: auto;
+    object-fit: contain;
 }
 
 /* ===================================
@@ -113,13 +111,10 @@
    =================================== */
 @media (max-width: 767.98px) {
     .awards-track {
-        /* On mobile, align logos to the start for a natural scrolling experience */
         justify-content: flex-start; 
-        gap: 20px; /* Reduce space between logos */
+        gap: 20px;
     }
-
     .award-item {
-        /* Make the logo boxes slightly smaller on mobile */
         width: 140px;
         height: 90px;
     }

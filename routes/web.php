@@ -29,5 +29,7 @@ use App\Http\Controllers\GiftVoucherController;
 
 
 Route::get('/', [IndexController::class, 'index']);
-
+Route::get('/packages', [IndexController::class, 'packages']);
+Route::get('/contact', [IndexController::class, 'contact']);
+Route::get('/about', [IndexController::class, 'about']);
 

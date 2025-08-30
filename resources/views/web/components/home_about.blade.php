@@ -1,9 +1,9 @@
 <!-- About Us Section -->
 <section class="about-dubai-section py-5">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center" style="background-color:#F6F6F6;">
             <!-- Left Column: Text Content -->
-            <div class="col-lg-7">
+            <div class="col-lg-7" >
                 <div class="about-content">
                     <!-- Main Title -->
                     <h2 class="about-title">
@@ -14,7 +14,10 @@
                     <p class="about-description">
                         so & with that in mind, Our experienced team have tailored our Hot Air Balloon flight packages to be a fresh, more interactive and adventurous filled with all amenities that will create golden memories to last a lifetime. We are not only offering you a hot air balloon tour, Dubai Ballooning offer you a complete thrilling hot air ballooning experience. Our professional Pilots have over 45 years of combined piloting experience of hot air balloons in all types of weather. We have flown in 25 countries and are considered Dubai’s Premier Hot Air Balloon tour company. Dubai Ballooning have a passion for ballooning! For us everyone’s first hot air balloon tour is a magical moment in their lives and our team never lose sight of that fact. Dubai Ballooning and it’s team love what we do and thoroughly enjoy providing our respected guests with the opportunity to experience the joy & thrill of hot air ballooning.
                     </p>
-
+                    <!-- Signature Text -->
+                    <p class="signature-text">
+                        Come Fly with us
+                    </p>
                     <!-- Features Grid -->
                     <div class="features-grid">
                         <div class="feature-item">
@@ -38,11 +41,6 @@
                             <p class="feature-text">24/7 Customer Support<br>Phone, Email, Whatsapp</p>
                         </div>
                     </div>
-
-                    <!-- Signature Text -->
-                    <p class="signature-text">
-                        Come Fly with us
-                    </p>
                 </div>
             </div>
 
@@ -60,128 +58,114 @@
 /* =======================================================
    FONTS
    ======================================================= */
-/* Import Google Fonts: Montserrat (400, 600, 800) and Ms Madi (400) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Ms+Madi&display=swap');
 
 /* =======================================================
-   STYLING FOR THE "ABOUT US" SECTION
+   STYLING FOR THE "ABOUT US" SECTION - REVISED & RESPONSIVE
    ======================================================= */
-
-/* --- 1. Overall Layout & Background --- */
 .about-dubai-section {
-    background-color: #ffffff; /* Pure white background for max contrast */
-    overflow: hidden; /* Prevents large elements from breaking layout */
+    background-color: #ffffff;
+    overflow: hidden;
 }
 
 .about-content {
-    padding-right: 2rem; /* Whitespace between text and image on large screens */
+    padding: 1rem;
+}
+@media (min-width: 992px) {
+    .about-content {
+        padding-right: 2rem;
+    }
 }
 
-/* --- 2. Typography (as per your analysis) --- */
-
-/* Main Title ("ABOUT DUBAI BALLOONING'S") */
+/* --- Typography --- */
 .about-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800; /* ExtraBold for "ABOUT" */
-    font-size: 40px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: #333333; /* Dark gray for softer text */
-    margin-bottom: 2rem;
+    font-weight: 800; font-size: 40px;
+    line-height: 1.2; text-transform: uppercase;
+    color: #333333; margin-bottom: 2rem;
 }
-
 .about-title .title-regular {
-    font-weight: 400; /* Regular for "DUBAI BALLOONING'S" */
+    font-weight: 400;
 }
-
-/* Description Paragraph */
 .about-description {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.6; /* Generous line height for readability */
-    color: #555555;
-    margin-bottom: 3rem;
+    font-weight: 400; font-size: 1rem;
+    line-height: 1.7; color: #555555;
+    margin-bottom: 2rem;
+    text-align: justify; /* Justified text on desktop looks cleaner */
 }
-
-/* Cursive Signature Text */
 .signature-text {
     font-family: 'Ms Madi', cursive;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 1;
-    color: #f79321; /* Vibrant orange accent color */
-    text-align: center;
-    margin-top: 2rem;
+    font-weight: 400; font-size: 72px;
+    line-height: 1; color: #f79321;
+    text-align: right; margin-top: 1rem; margin-bottom: 2rem;
 }
 
-/* --- 3. Iconography (Features Grid) --- */
-
+/* --- REVISED Features Grid --- */
 .features-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Spreads items evenly */
-    gap: 1.5rem 1rem; /* Row and column gap */
+    flex-wrap: wrap; /* CRITICAL: Allows items to wrap on smaller screens */
+    gap: 1.5rem 1rem; /* Consistent spacing for rows and columns */
+    justify-content: space-between;
 }
-
 .feature-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    flex-basis: 100px; /* Base width for each item */
-    flex-grow: 1;
+    gap: 12px;
+    /* Flex-grow allows items to expand and fill space */
+    flex: 1 1 180px; /* Grow, shrink, with a base width of 180px */
 }
-
 .feature-icon {
-    width: 61px;
-    height: 61px;
-    object-fit: contain;
-    margin-bottom: 0.75rem;
+    width: 40px; height: 40px;
+    object-fit: contain; flex-shrink: 0;
 }
-
 .feature-text {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; /* SemiBold */
-    font-size: 13px;
-    line-height: 1.4; /* Adjusted for two lines of text */
-    color: #333333;
-    margin: 0;
+    font-weight: 600;
+    font-size: 12px; /* CHANGED: Increased from 8px for readability */
+    line-height: 1.4; color: #333333; margin: 0;
 }
 
-/* --- 4. Imagery --- */
+/* --- Imagery --- */
 .about-image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; justify-content: center; align-items: center;
 }
 
-/* --- 5. Responsiveness --- */
-
-/* For Tablets (where columns stack) */
+/* --- RESPONSIVENESS --- */
 @media (max-width: 991.98px) {
     .about-content {
-        padding-right: 0; /* Remove padding as there's no adjacent image */
-        text-align: center; /* Center all text content */
+        text-align: center;
+    }
+    .about-description {
+        text-align: center; /* Center description on tablets/mobile */
+    }
+    .signature-text {
+        text-align: center; /* Center signature text */
     }
     .features-grid {
-        justify-content: center; /* Center icons when they wrap */
+        justify-content: center; /* Center the feature items */
     }
     .about-image-wrapper {
-        margin-top: 3rem; /* Add space above the image */
+        margin-top: 3rem;
     }
 }
 
-/* For Mobile */
 @media (max-width: 767.98px) {
-    .about-title {
-        font-size: 32px; /* Slightly smaller title */
+    .about-title { font-size: 32px; }
+    .about-description { font-size: 0.9rem; }
+    .signature-text { font-size: 60px; }
+    
+    .feature-item {
+        /* On small screens, make items take up more space for a 2-column layout */
+        flex-basis: 45%;
     }
-    .about-description {
-        font-size: 16px; /* Smaller, more mobile-friendly paragraph text */
-    }
-    .signature-text {
-        font-size: 60px; /* Adjust signature text size */
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        /* On very small screens, stack to a single column */
+        flex-basis: 100%;
+        justify-content: center;
     }
 }
 </style>

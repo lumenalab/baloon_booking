@@ -11,4 +11,19 @@ class IndexController extends Controller
     {
         return view('web.index');
     }
+
+    public function packages()
+    {
+        return view('web.packages.index');
+    }
+
+    public function contact()
+    {
+        return view('web.contact.contact');
+    }
+
+    public function about()
+    {
+        return view('web.about.about');
+    }
 }

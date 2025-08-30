@@ -12,4 +12,10 @@
 
         @include('web.components.home_about')
 
+        @include('web.components.testimonials')
+
+        @include('web.components.reviews')
+
+        @include('web.components.experience')
+
     @endsection
