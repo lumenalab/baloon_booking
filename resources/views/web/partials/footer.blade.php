@@ -41,7 +41,7 @@
     <h5 class="footer-heading">Other Information</h5>
     <ul class="footer-links">
         <li><a href="/faqs">FAQ's</a></li>
-        <li><a href="#">Blogs</a></li> <!-- Assuming you have a blogs page -->
+        <li><a href="/blog">Blogs</a></li> <!-- Assuming you have a blogs page -->
         <li><a href="/privacy-policy">Privacy Policy</a></li>
         {{-- <li><a href="/cancellation-policy">Cancellation Policy</a></li> <!-- You may need to create this page --> --}}
         <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
