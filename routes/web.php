@@ -32,4 +32,8 @@ Route::get('/', [IndexController::class, 'index']);
 Route::get('/packages', [IndexController::class, 'packages']);
 Route::get('/contact', [IndexController::class, 'contact']);
 Route::get('/about', [IndexController::class, 'about']);
+Route::get('/faqs', [IndexController::class, 'faqs']);
+Route::get('/privacy-policy', [IndexController::class, 'privacyPolicy']);
+Route::get('/terms-and-conditions', [IndexController::class, 'termsAndConditions']);
+
 

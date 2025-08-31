@@ -26,4 +26,20 @@ class IndexController extends Controller
     {
         return view('web.about.about');
     }
+
+    public function faqs()
+    {
+        return view('web.faqs.faqs');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('web.privacy-policy.privacy-policy');
+    }
+
+    public function termsAndConditions()
+    {
+        return view('web.terms-and-conditions.terms-and-conditions');
+    }
+
 }

@@ -36,26 +36,26 @@
             </div>
 
             <!-- Column 3: Information & Payments -->
-            <div class="col-lg-3 col-md-6 footer-col">
-                <h5 class="footer-heading">Other Information</h5>
-                <ul class="footer-links">
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cancellation Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+          <!-- Column 3: Information & Payments -->
+<div class="col-lg-3 col-md-6 footer-col">
+    <h5 class="footer-heading">Other Information</h5>
+    <ul class="footer-links">
+        <li><a href="/faqs">FAQ's</a></li>
+        <li><a href="#">Blogs</a></li> <!-- Assuming you have a blogs page -->
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        {{-- <li><a href="/cancellation-policy">Cancellation Policy</a></li> <!-- You may need to create this page --> --}}
+        <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+    </ul>
 
-                <div class="payment-icons mt-4">
-                    <!-- Mastercard SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" role="img"><path d="M34.05 10.12c-2.9-2.76-6.17-4.14-9.62-4.14-3.32 0-6.17 1.38-8.66 4.14H34.05z" fill="#f79e1b"></path><path d="M24.43 20c3.45 0 6.72-1.38 9.62-4.14H15.77c2.49 2.76 5.34 4.14 8.66 4.14z" fill="#eb001b"></path><path d="M15.77 15.86h18.28a15.28 15.28 0 010-11.72H15.77a15.28 15.28 0 010 11.72z" fill="#ff5f00"></path></svg>
-                    <!-- Visa SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" viewBox="0 0 38 24"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#142688"/><path d="m15.1 18.3-5.2-12.8h3.6l3.3 9.7c.1.4.2.7.3 1.1h.1c.1-.4.2-.8.3-1.2l3.2-9.6h3.5L19 18.3h-3.6l-1-2.9h-.1c-.2.9-.3 2-.4 2.9h-2.8zM28.4 5.5l-2.9 12.8h3.4l2.9-12.8h-3.4zM10.1 5.5l-3.3 9-.5-4.2-1.3-4.8h3.7l1.4 4.9c0 .2.1.4.1.6h.1l2-5.5h3.4l-5.1 12.8h-3.6z" fill="#fff"/></svg>
-                    <!-- PayPal SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" viewBox="0 0 38 24"><path fill="#003087" d="M23.23 6.13H31.1v9.26c-1.34 2.1-4.1 2.9-6.86 2.9-5.1 0-8.6-3.13-8.6-7.5 0-4.5 3.5-7.63 8.6-7.63zm.06 11.5c1.9 0 3.1-.9 3.6-2.9H23.9c-1.5 0-2.8.7-2.8 2.3 0 1.2 1.1 1.9 2.1 1.9v-1.3zm-14.8-1.5c.5-.7.9-1.4 1.2-2.3H5.9v-1.2h3.9c.2-.7.3-1.3.4-1.9H5.9v-1.2h4.7c.4-1.9 1.8-3 3.9-3 1.3 0 2.2.5 2.8 1.4.6-.9 1.6-1.4 2.8-1.4 1.3 0 2.6.7 3.2 2h3.4c-.4-3.1-3.3-5.3-7-5.3-2.5 0-4.6 1.3-5.8 3.2-1-.8-2.3-1.3-3.7-1.3-3.2 0-5.4 2.3-5.9 5.3H0v1.2h2.5c-.1.6-.2 1.2-.2 1.8 0 1.5.3 2.8 1 3.9H0V18h3.3c.7 1.8 2.4 3 4.5 3 2.9 0 4.8-1.9 5.4-4.2.3 1 1 1.6 1.9 1.6h1.5z"/></svg>
-                </div>
-            </div>
-
+    <div class="payment-icons mt-4">
+        <!-- Mastercard SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24" role="img"><path d="M34.05 10.12c-2.9-2.76-6.17-4.14-9.62-4.14-3.32 0-6.17 1.38-8.66 4.14H34.05z" fill="#f79e1b"></path><path d="M24.43 20c3.45 0 6.72-1.38 9.62-4.14H15.77c2.49 2.76 5.34 4.14 8.66 4.14z" fill="#eb001b"></path><path d="M15.77 15.86h18.28a15.28 15.28 0 010-11.72H15.77a15.28 15.28 0 010 11.72z" fill="#ff5f00"></path></svg>
+        <!-- Visa SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" viewBox="0 0 38 24"><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#142688"/><path d="m15.1 18.3-5.2-12.8h3.6l3.3 9.7c.1.4.2.7.3 1.1h.1c.1-.4.2-.8.3-1.2l3.2-9.6h3.5L19 18.3h-3.6l-1-2.9h-.1c-.2.9-.3 2-.4 2.9h-2.8zM28.4 5.5l-2.9 12.8h3.4l2.9-12.8h-3.4zM10.1 5.5l-3.3 9-.5-4.2-1.3-4.8h3.7l1.4 4.9c0 .2.1.4.1.6h.1l2-5.5h3.4l-5.1 12.8h-3.6z" fill="#fff"/></svg>
+        <!-- PayPal SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" viewBox="0 0 38 24"><path fill="#003087" d="M23.23 6.13H31.1v9.26c-1.34 2.1-4.1 2.9-6.86 2.9-5.1 0-8.6-3.13-8.6-7.5 0-4.5 3.5-7.63 8.6-7.63zm.06 11.5c1.9 0 3.1-.9 3.6-2.9H23.9c-1.5 0-2.8.7-2.8 2.3 0 1.2 1.1 1.9 2.1 1.9v-1.3zm-14.8-1.5c.5-.7.9-1.4 1.2-2.3H5.9v-1.2h3.9c.2-.7.3-1.3.4-1.9H5.9v-1.2h4.7c.4-1.9 1.8-3 3.9-3 1.3 0 2.2.5 2.8 1.4.6-.9 1.6-1.4 2.8-1.4 1.3 0 2.6.7 3.2 2h3.4c-.4-3.1-3.3-5.3-7-5.3-2.5 0-4.6 1.3-5.8 3.2-1-.8-2.3-1.3-3.7-1.3-3.2 0-5.4 2.3-5.9 5.3H0v1.2h2.5c-.1.6-.2 1.2-.2 1.8 0 1.5.3 2.8 1 3.9H0V18h3.3c.7 1.8 2.4 3 4.5 3 2.9 0 4.8-1.9 5.4-4.2.3 1 1 1.6 1.9 1.6h1.5z"/></svg>
+    </div>
+</div>
             <!-- Column 4: Contact Information -->
             <div class="col-lg-3 col-md-6 footer-col">
                 <h5 class="footer-heading">Contact Information</h5>
